@@ -5,7 +5,7 @@ import './index.scss';
 
 export default function Sidebar() {
   return (
-    <nav className="h-full">
+    <nav className="h-full w-full flex gap-2">
       <Link className="logo" to="/">
         <FaIdCard />
       </Link>
