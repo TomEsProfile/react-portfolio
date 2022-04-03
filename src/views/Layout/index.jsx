@@ -7,10 +7,14 @@ import './index.scss';
 
 export default function Layout() {
   return (
-    <div>
-      <Sidebar />
-      <Outlet />
+    <>
+      <div className="flex">
+        <Sidebar />
+        <main className="ml-14">
+          <Outlet />
+        </main>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
