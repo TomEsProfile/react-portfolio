@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../../components/Sidebar';
 import Footer from '../../components/Footer';
-import Profile from '../Profile';
+import Profile from '../../components/Profile';
 import './index.scss';
 
 export default function Layout() {
