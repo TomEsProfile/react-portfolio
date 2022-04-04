@@ -1,0 +1,35 @@
+nav {
+  box-shadow: 2px 0px 2px 0px black;
+
+  a {
+
+    svg {
+      transition: all .3s ease-out;
+    }
+    
+    &:after {
+      content: attr(data-hover);
+      display: block;
+      position: absolute;
+      bottom: 2px;
+      opacity: 0;
+      font-weight: bold;
+      font-size: .75em;
+      text-align: center;
+      width: 100%;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+  
+    &:hover {
+      svg {
+        // transform: rotate(180deg);
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
