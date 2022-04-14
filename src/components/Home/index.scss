@@ -1,0 +1,13 @@
+@import '../../scss/variables.scss';
+
+.home {
+  color: lightgrey;
+  letter-spacing: -2px;
+  animation: fadeIn 1.5s forwards;
+
+  img {
+    top: -16px;
+    right: 20px;
+    animation: rotateIn .5s linear both;
+  }
+}

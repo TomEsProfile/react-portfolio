@@ -1,11 +1,30 @@
-$primary-color: #ffd700;
+@import './scss/variables.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,600&family=Square+Peg&display=swap');
 @import 'animate.css';
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: $primary-color;
+  font-family: $primary-font;
+  background: $primary-color;
+  background: $body-bg;
   // line-height: 1.5;
   // color: #333;
+}
+
+.font-primary {
+  font-family: $primary-font;
+}
+
+.font-secondary {
+  font-family: $secondary-font;
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+
+.color-primary {
+  color: $primary-color;
 }

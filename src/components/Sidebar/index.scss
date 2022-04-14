@@ -1,5 +1,10 @@
+@import '../../scss/variables.scss';
+
 nav {
   box-shadow: 2px 0px 2px 0px black;
+  
+  .nav-links a {
+  }
 
   a {
 
@@ -13,8 +18,10 @@ nav {
       position: absolute;
       bottom: 2px;
       opacity: 0;
+      font-family: $secondary-font;
       font-weight: bold;
-      font-size: .75em;
+      // font-size: min(calc(0.8em + 0.5vw), 1.5em);
+      font-size: 1.5em;
       text-align: center;
       width: 100%;
       -webkit-transition: all 0.3s ease-out;
@@ -29,6 +36,7 @@ nav {
 
       &:after {
         opacity: 1;
+        color: $primary-color;
       }
     }
   }
