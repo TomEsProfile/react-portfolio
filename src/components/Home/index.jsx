@@ -6,8 +6,8 @@ import LogoTitle from '../../assets/imgs/trivium-art-history.svg';
 
 export default function Home() {
   return (
-    <div className="home flex items-center px-28">
-      <div className="font-bold relative">
+    <div className="home flex items-center text-7xl md:text-7xl pl-6 md:pl-24">
+      <div className="font-bold">
         Hi, <br />
         I'm
         <div className="inline-flex w-40 relative">
