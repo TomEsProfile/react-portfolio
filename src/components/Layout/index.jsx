@@ -24,7 +24,9 @@ export default function Layout() {
 
       <div className="flex">
         <Sidebar />
-        <main className={getPageIntent()}>
+        <main
+          className={`${getPageIntent()} h-screen flex flex-col justify-center`}
+        >
           <span className="text-6xl pl-8 text-indigo-400 font-secondary font-light py-8">
             &lt;body&gt;
           </span>

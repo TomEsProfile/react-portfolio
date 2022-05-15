@@ -44,7 +44,7 @@ export default function Sidebar() {
   return (
     <>
       {/* ! needed so tailwind loads the used styles */}
-      <span className="hidden gap-4 gap-10"></span>
+      <span className="hidden gap-4 gap-8 gap-10"></span>
       <nav
         className={`${getPositioningStyle()} justify-between items-center gap-2 bg-zinc-900 text-center`}
       >
