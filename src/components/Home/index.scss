@@ -4,11 +4,41 @@
   color: lightgrey;
   letter-spacing: -2px;
   animation: fadeIn 1.5s forwards;
-  line-height: 2!important;
+  line-height: 2 !important;
 
   img {
-    top: -16px;
+    // top: -16px;
     right: 20px;
-    animation: rotateIn .5s linear both;
+    animation: rotateIn 0.5s linear both;
+  }
+
+  h2 {
+    color: $color-3;
+    margin-top: 1rem;
+    font-weight: 400;
+    // font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    // text-shadow: 0px 0px 1px #333;
+    animation: fadeIn 1s 0.5s backwards;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 2.5rem;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
   }
 }

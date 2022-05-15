@@ -6,7 +6,7 @@
       }
 
       .t {
-        fill: #ff7300;
+        fill: rgb(251 191 36);
       }
     </style>
   </defs>

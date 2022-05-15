@@ -43,11 +43,11 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* ! needed so tailwind loads the used styles */}
-      <span className="hidden gap-4 gap-8 gap-10"></span>
       <nav
         className={`${getPositioningStyle()} justify-between items-center gap-2 bg-zinc-900 text-center`}
       >
+        {/* ! needed so tailwind loads the used styles */}
+        <span className="hidden gap-4 gap-8 gap-10"></span>
         <FontAwesomeIcon
           icon={faIdCard}
           className={`logo w-20 md:pt-10 color-primary text-2xl`}

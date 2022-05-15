@@ -24,19 +24,17 @@ export default function Layout() {
 
       <div className="flex">
         <Sidebar />
-        <main
-          className={`${getPageIntent()} h-screen flex flex-col justify-center`}
-        >
-          <span className="text-6xl pl-8 text-indigo-400 font-secondary font-light py-8">
+        <main className={`ml-6 md:ml-32 h-screen flex flex-col justify-center`}>
+          <span className="text-6xl pl-8 color-secondary font-secondary font-light py-8">
             &lt;body&gt;
           </span>
           <div className="page flex">
             <Outlet />
           </div>
-          <span className="text-6xl pl-8 text-indigo-400 font-secondary font-light pt-8">
+          <span className="text-6xl pl-8 color-secondary font-secondary font-light pt-8">
             &lt;/body&gt;
           </span>
-          <span className="text-6xl text-indigo-400 font-secondary font-light pb-4">
+          <span className="text-6xl color-secondary font-secondary font-light pb-4">
             &lt;/html&gt;
           </span>
         </main>
