@@ -6,7 +6,7 @@ import LogoTitle from '../../assets/imgs/trivium-art-history.svg';
 
 export default function Home() {
   return (
-    <div className="home flex flex-col h-full justify-center text-5xl md:text-7xl pl-12 md:pl-32">
+    <div className="home self-center flex flex-col h-full justify-center text-5xl md:text-7xl pl-12 md:pl-32">
       <div className="font-bold">
         Hi, <br />
         I'm
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <h2 className="border-b border-dashed border-b-gray-400 text-xs md:text-base">
-        Front- & Back-End Developer / React / NodeJS
+        Full Stack Web Developer / React / NodeJS
       </h2>
       <Link to="/contact" className="flat-button w-fit">
         CONTACT ME

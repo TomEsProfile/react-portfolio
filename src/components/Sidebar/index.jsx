@@ -52,6 +52,7 @@ export default function Sidebar() {
           icon={faIdCard}
           className={`logo w-20 md:pt-10 color-primary text-2xl`}
         />
+        {/* {point} */}
 
         <div
           className={`nav-links flex ${getFlexDirection(

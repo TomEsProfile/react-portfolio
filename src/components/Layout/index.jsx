@@ -20,11 +20,13 @@ export default function Layout() {
   return (
     <>
       {/* ! needed so tailwind loads the used styles */}
-      <span className="hidden ml-8 ml-16"></span>
+      <span className="hidden ml-4 ml-8 ml-16"></span>
 
       <div className="flex">
         <Sidebar />
-        <main className={`ml-6 md:ml-32 h-screen flex flex-col justify-center`}>
+        <main
+          className={`ml-0 md:ml-32 min-h-screen flex flex-col justify-center`}
+        >
           <span className="text-6xl pl-8 color-secondary font-secondary font-light py-8">
             &lt;body&gt;
           </span>

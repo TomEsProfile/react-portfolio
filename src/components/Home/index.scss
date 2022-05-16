@@ -1,7 +1,7 @@
 @import '../../scss/variables.scss';
 
 .home {
-  color: lightgrey;
+  color: $color-text-1;
   letter-spacing: -2px;
   animation: fadeIn 1.5s forwards;
   line-height: 2 !important;
@@ -24,20 +24,20 @@
   }
 
   .flat-button {
-    color: #ffd700;
+    color: $color-4;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 1px solid $color-4;
     margin-top: 2.5rem;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background: #ffd700;
+      background: $color-4;
       color: #333;
     }
   }
