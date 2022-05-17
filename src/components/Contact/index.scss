@@ -1,5 +1,13 @@
 @import '../../scss/variables.scss';
 
+.contact-page {
+  .contact-text {
+    opacity: 0;
+    animation: fadeInUp 1s 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
 .contact-form {
   width: 100%;
   margin-top: 20px;

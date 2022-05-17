@@ -3,44 +3,60 @@ import './index.scss';
 
 export default function Profile() {
   return (
-    <div className="profile">
-      <div className="container">
-        <div className="logo">My tech stack</div>
+    <div className="profile flex justify-center">
+      <div className="container scale-75 md:scale-100 -left-32 md:left-0">
+        <div className="logo"></div>
 
         <div className="inner"></div>
 
         <div className="middle dots">
-          <div className="dot icon-buch"></div>
-          <div className="dot icon-film"></div>
+          <div className="dot icon-html5"></div>
+          <div className="dot icon-react"></div>
+          <div className="dot icon-express"></div>
+          <div className="dot icon-tailwind"></div>
         </div>
 
         <div className="outer dots">
-          <div className="dot icon-kompass"></div>
-          <div className="dot icon-screen"></div>
+          <div className="dot icon-js"></div>
+          <div className="dot icon-nodejs"></div>
+          <div className="dot icon-css3"></div>
+          <div className="dot icon-mongodb"></div>
         </div>
 
         <div className="middle tooltips">
           <div className="target">
-            <div className="tooltip">Klassische Medien</div>
+            <div className="tooltip">Html-5</div>
           </div>
           <div className="target">
-            <div className="tooltip">Filme & Videos</div>
+            <div className="tooltip">React</div>
+          </div>
+          <div className="target">
+            <div className="tooltip">Express-JS</div>
+          </div>
+          <div className="target">
+            <div className="tooltip">Tailwind</div>
           </div>
         </div>
 
         <div className="outer tooltips">
           <div className="target">
-            <div className="tooltip">Strategie & Beratung</div>
+            <div className="tooltip">JavaScript</div>
           </div>
           <div className="target">
-            <div className="tooltip">Digitale Medien</div>
+            <div className="tooltip">Node-JS</div>
+          </div>
+          <div className="target">
+            <div className="tooltip">CSS3</div>
+          </div>
+          <div className="target">
+            <div className="tooltip">MongoDB</div>
           </div>
         </div>
 
         {/* <div className="menu">
           <div>
             <div>
-              <div className="icon icon-screen"></div>
+              <div className="icon icon-css3"></div>
               <h2>Digitale Medien</h2>
               <ul>
                 <li>Webkonzeption und -design</li>

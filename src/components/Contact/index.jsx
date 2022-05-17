@@ -71,7 +71,7 @@ const Contact = () => {
               idx={5}
             />
           </h1>
-          <p className="color-3 text-base hidden sm:block">
+          <p className="contact-text color-3 text-base hidden sm:block">
             I am interested in freelance opportunities - fullstack, frontend or
             backend. However, if you have other requests or questions, don't
             hesitate to contact me using below form either.

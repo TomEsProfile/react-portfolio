@@ -5,7 +5,7 @@ import './index.scss';
 import LogoTitle from '../../assets/imgs/trivium-art-history.svg';
 import AnimatedLetters from '../AnimatedLetters';
 
-const textArray = ['Hi,', "I'm Thomas", 'a web developer'];
+const textArray = ['Hi,', "I'm", 'homas', 'a web developer'];
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,21 +18,40 @@ export default function Home() {
 
   return (
     <div className="home self-center flex flex-col h-full justify-center text-5xl md:text-7xl pl-12 md:pl-32">
-      <div className="font-bold">
+      <div className="font-bold relative">
         <AnimatedLetters
           letterClass={letterClass}
           strArray={textArray[0].split('')}
           idx={1}
         />
+        <div className="flex">
+          <span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={textArray[1].split('')}
+              idx={textArray[0].length}
+            />
+          </span>
+          <div className="inline-flex w-28 md:w-40 relative -z-10">
+            <img
+              src={LogoTitle}
+              alt=""
+              className="absolute -top-9 md:-top-11"
+            />
+          </div>
+          <span className="-ml-8 md:-ml-10">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={textArray[2].split('')}
+              idx={textArray[1].length + 3}
+            />
+          </span>
+        </div>
+
         <AnimatedLetters
           letterClass={letterClass}
-          strArray={textArray[1].split('')}
-          idx={textArray[0].length}
-        />
-        <AnimatedLetters
-          letterClass={letterClass}
-          strArray={textArray[2].split('')}
-          idx={textArray[1].length}
+          strArray={textArray[3].split('')}
+          idx={textArray[2].length}
         />
         {/* Hi, <br />
         I'm

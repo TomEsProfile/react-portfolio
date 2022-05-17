@@ -1,16 +1,20 @@
 @import '../../scss/variables.scss';
 
-$container-size: 540px;
+$container-size: 640px;
 $d1: 100px;
 $d2: 240px;
 $d3: 320px;
 $d4: 440px;
 
 .profile {
+  overflow: hidden;
   .container {
     position: relative;
+    top: -3rem;
+    // left: -5rem;
     width: #{$container-size};
-    height: #{$container-size};
+    // height: #{$container-size};
+    height: auto;
   }
 
   .logo {
@@ -24,7 +28,7 @@ $d4: 440px;
     //   url(https://www.designeinheit.de/kunden/mm/logo_mm_kreis.svg) center
     //   center no-repeat;
     background-size: 80%;
-    box-shadow: inset 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: inset 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
   }
 
   .inner {
@@ -34,10 +38,10 @@ $d4: 440px;
     width: #{$d2};
     height: #{$d2};
     // background: url(https://www.designeinheit.de/kunden/mm/text_kreislauf.svg)
-    background: #fff url('../../../public/images/tech-stack-orbit-text-1.svg')
+    background: url(../../../public/images//tech_stack/tech-stack-orbit-text-2.svg)
       center center;
     background-size: contain;
-    animation: rotate 30s reverse linear infinite;
+    // animation: rotate 30s reverse linear infinite;
   }
 
   .middle,
@@ -74,27 +78,40 @@ $d4: 440px;
 
   .dot {
     position: absolute;
-    width: 48px;
-    height: 48px;
-    left: -24px;
-    top: calc(50% - 24px);
+    // padding: 20px;
+    width: 64px;
+    height: 64px;
+    left: -32px;
+    top: calc(50% - 32px);
     border-radius: 100px;
-    background: #fff center center;
+    background: center center no-repeat;
     background-size: 85%;
-    box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .icon-buch {
-    background-image: url(https://www.designeinheit.de/kunden/mm/icon_buch.svg);
+  .icon-html5 {
+    background-image: url(../../../public/images/tech_stack/logo_html5.png);
   }
-  .icon-screen {
-    background-image: url(https://www.designeinheit.de/kunden/mm/icon_screen.svg);
+  .icon-css3 {
+    background-image: url(../../../public/images/tech_stack/logo_css3.png);
   }
-  .icon-kompass {
-    background-image: url(https://www.designeinheit.de/kunden/mm/icon_kompass.svg);
+  .icon-js {
+    background-image: url(../../../public/images/tech_stack/logo_js.png);
   }
-  .icon-film {
-    background-image: url(https://www.designeinheit.de/kunden/mm/icon_film.svg);
+  .icon-react {
+    background-image: url(../../../public/images/tech_stack/logo_react.png);
+  }
+  .icon-nodejs {
+    background-image: url(../../../public/images/tech_stack/logo_nodejs.svg);
+  }
+  .icon-express {
+    background-image: url(../../../public/images/tech_stack/logo_express.png);
+  }
+  .icon-tailwind {
+    background-image: url(../../../public/images/tech_stack/logo_tailwind.png);
+  }
+  .icon-mongodb {
+    background-image: url(../../../public/images/tech_stack/logo_mongodb.png);
   }
 
   .target {
@@ -109,10 +126,31 @@ $d4: 440px;
   }
 
   .dot:nth-child(2) {
-    left: calc(100% - 24px);
+    left: calc(100% - 32px);
   }
+
+  .dot:nth-child(3) {
+    top: calc(100% - 32px);
+    left: calc(50% - 32px);
+  }
+
+  .dot:nth-child(4) {
+    top: calc(0% - 32px);
+    left: calc(50% - 32px);
+  }
+
   .target:nth-child(2) {
     left: calc(100% - 32px);
+  }
+
+  .target:nth-child(3) {
+    top: calc(100% - 32px);
+    left: calc(50% - 32px);
+  }
+
+  .target:nth-child(4) {
+    top: calc(0% - 32px);
+    left: calc(50% - 32px);
   }
 
   .middle .dot,
