@@ -67,14 +67,14 @@ const Contact = () => {
           <h1 className="text-5xl md:text-7xl mb-10 whitespace-nowrap">
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={'Contact me'.split('')}
               idx={5}
             />
           </h1>
           <p className="color-3 text-base hidden sm:block">
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am interested in freelance opportunities - fullstack, frontend or
+            backend. However, if you have other requests or questions, don't
+            hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -107,6 +107,7 @@ const Contact = () => {
                 </div>
                 <div className="li">
                   <textarea
+                    className="sm:h-36 lg:h-60 xl:h-64"
                     placeholder="Message"
                     name="message"
                     required
@@ -121,28 +122,26 @@ const Contact = () => {
         </div>
         {/* MAP */}
         <div className="map-wrap relative mt-0 md:mt-28 w-full md:w-1/2 h-72 md:h-3/4">
-          <div className="info-map hidden sm:block">
-            Thomas Schmidt,
-            <br />
-            Germany,
+          <div className="info-map hiddenn sm:block text-right shadow-lg text-md md:text-base lg:text-xl p-2 md:p-4 lg:p-8">
+            Thomas Schmidt
             <br />
             95448 Bayreuth <br />
-            Bavaria <br />
-            <br />
-            <span>schmiddla@gmail.com</span>
+            Bavaria, Germany <br />
+            <span className="mt-2 font-bold">schmiddla@gmail.com</span>
           </div>
           <MapContainer
             center={posBT}
             zoom={11}
             className="w-full"
+            zoomControl={false}
             // whenReady={() => setMapReady(true)}
           >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker ref={markerRef} position={posBT}>
               <Popup closeButton={false} closeOnClick={true} autoPan={true}>
                 <span className="flex gap-1 items-center">
-                  <span className="text-lg">☕️</span> Thomas lives here, come
-                  over for a cup of coffee :)
+                  <span className="text-4xl">☕️</span>I live here! Come over
+                  for a cup of coffee :)
                 </span>
               </Popup>
             </Marker>

@@ -56,7 +56,7 @@ export default function Sidebar() {
 
         <div
           className={`nav-links flex ${getFlexDirection(
-            4,
+            8,
             10
           )} items-center pl-8 md:pl-0 md:pt-28 w-48`}
         >

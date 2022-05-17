@@ -7,7 +7,8 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-family: $font-primary;
-  background: $color-primary;
+  // background: $color-primary;
+  // background-image: linear-gradient($bg-body 60%, $color-primary);
   background: $bg-body;
   color: whitesmoke;
   // line-height: 1.5;
@@ -36,6 +37,14 @@ body {
 
 .color-secondary {
   color: $color-secondary;
+}
+
+.bg-1 {
+  background: $color-1;
+}
+
+.color-1 {
+  color: $color-1;
 }
 
 .bg-3 {
