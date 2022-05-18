@@ -30,7 +30,7 @@ const Contact = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
-    }, 3000);
+    }, 2000);
 
     setTimeout(() => {
       showMarkerPopup(markerRef.current);
@@ -126,20 +126,22 @@ const Contact = () => {
           </div>
         </div>
         {/* MAP */}
-        <div className="map-wrap relative mt-0 md:mt-28 w-full md:w-1/2 h-72 md:h-3/4">
+        <div className="map-wrap flex justify-center relative mt-0 md:mt-28 w-full md:w-1/2 h-72 md:h-3/4">
           {/* <div className="info-map hiddenn sm:block text-right shadow-lg text-md md:text-base lg:text-xl p-2 md:p-4 lg:p-8">
             Thomas Schmidt
             <br />
             95448 Bayreuth <br />
             Bavaria, Germany <br />
-            <span className="mt-2 font-bold">schmiddla@gmail.com</span>
+            <span className="mt-2 font-bold">ts75.business@gmail.com</span>
           </div> */}
-          <div className="info-map flex flex-row justify-between hiddenn shadow-lg text-md md:text-base lg:text-xl py-1 px-3 md:p-3 lg:p-8">
-            <div className="flex flex-col">
+          <div className="info-map flex flex-row hiddenn shadow-lg text-md md:text-base lg:text-xl bg-transparent">
+            <div className="rounded-l-lg w-1/2 bg-amber-800 bg-opacity-80 color-41 flex flex-col py-1 px-3 md:p-3 lg:p-4">
               <div>Thomas Schmidt</div>
-              <div className="mt-1 font-bold">schmiddla@gmail.com</div>
+              <div className="mt-1 font-bold text-sm">
+                <a href="mailto:ts75.business@gmail.com">mailto:gmail</a>
+              </div>
             </div>
-            <div className="flex flex-col text-right">
+            <div className="rounded-r-lg w-1/2 bg-white bg-opacity-50 color-5 flex flex-col text-right py-1 px-3 md:p-3 lg:p-4">
               <div>95448 Bayreuth</div>
               <div className="mt-1">Bavaria, Germany</div>
             </div>
@@ -147,7 +149,7 @@ const Contact = () => {
           <MapContainer
             center={posBT}
             zoom={11}
-            className="w-full"
+            className="w-full relative"
             zoomControl={false}
             // whenReady={() => setMapReady(true)}
           >
