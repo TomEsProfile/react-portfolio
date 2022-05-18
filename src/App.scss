@@ -1,0 +1,72 @@
+@import './scss/variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,600&family=Square+Peg&display=swap');
+@import 'animate.css';
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: $font-primary;
+  // background: $color-primary;
+  // background-image: linear-gradient($bg-body 60%, $color-primary);
+  background: $bg-body;
+  color: whitesmoke;
+  // line-height: 1.5;
+  // color: #333;
+}
+
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+.bg-primary {
+  background: $color-primary;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.bg-secondary {
+  background: $color-secondary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.bg-1 {
+  background: $color-1;
+}
+
+.color-1 {
+  color: $color-1;
+}
+
+.bg-3 {
+  background: $color-3;
+}
+
+.color-3 {
+  color: $color-3;
+}
+
+.bg-4 {
+  background: $color-4;
+}
+
+.color-4 {
+  color: $color-4;
+}
+
+.bg-5 {
+  background: $color-5;
+}
+
+.color-5 {
+  color: $color-5;
+}
