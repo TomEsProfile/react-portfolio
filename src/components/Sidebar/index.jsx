@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { MdEmail } from 'react-icons/md';
 import useBreakpoints from '../../custom/useBreakpoint';
+import ProfilePic from '../../assets/imgs/profile-pic-a.jpg';
 
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,6 +18,8 @@ import {
   faSkype,
 } from '@fortawesome/free-brands-svg-icons';
 
+import { RiGithubLine } from 'react-icons/ri';
+
 const navLinks = [
   { path: '/', name: 'Home', icon: faHome },
   { path: '/profile', name: 'About', icon: faUser },
@@ -30,7 +33,7 @@ export default function Sidebar() {
   function getPositioningStyle() {
     // console.log(point);
     if (point === 'xs' || point === 'sm') {
-      return `fixed bottom-0 flex w-full h-16 md:h-24`;
+      return `fixed bottom-0 inset-x-0 flex w-full h-16 md:h-24`;
     } else return `fixed top-0 flex ${getFlexDirection()} h-full w-16 md:w-24`;
   }
 
@@ -48,9 +51,10 @@ export default function Sidebar() {
       >
         {/* ! needed so tailwind loads the used styles */}
         <span className="hidden gap-4 gap-8 gap-10"></span>
-        <FontAwesomeIcon
-          icon={faIdCard}
-          className={`logo w-20 md:pt-10 color-primary text-2xl`}
+        <img
+          src={ProfilePic}
+          alt=""
+          className="w-12 md:w-16 ml-2 md:ml-0 md:mt-2 rounded-full"
         />
         {/* {point} */}
 
@@ -92,23 +96,23 @@ export default function Sidebar() {
               className={`text-lg md:text-2xl`}
             />
           </a>
-          <Link
+          <a
             data-hover={`GitHub`}
-            to={`/`}
+            href={`https://github.com/TomEsDE`}
             className={`relative w-full after:content-[attr(data-hover)] after:color-primary after:text-lg after:md:text-2xl`}
           >
             <FontAwesomeIcon
               icon={faGithub}
               className={`text-lg md:text-2xl`}
             />
-          </Link>
-          <Link
-            data-hover={`Skype`}
-            to={`/`}
+          </a>
+          <a
+            data-hover={`Org`}
+            href={`https://github.com/TomEsProfile`}
             className={`relative w-full after:content-[attr(data-hover)] after:color-primary after:text-lg after:md:text-2xl`}
           >
-            <FontAwesomeIcon icon={faSkype} className={`text-lg md:text-2xl`} />
-          </Link>
+            <RiGithubLine className={`text-xl md:text-3xl inline-block`} />
+          </a>
 
           {point !== 'xs' && point !== 'sm' && (
             <div className={`md:text-lg pt-6 font-bold `}>&copy; 2022</div>
