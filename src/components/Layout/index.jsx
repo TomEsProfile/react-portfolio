@@ -9,13 +9,7 @@ import './index.scss';
 export default function Layout() {
   // hook to get the current breakpoint of screen size
   const point = useBreakpoints();
-
-  function getPageIntent(mlSm = 0, mlLg = 16) {
-    console.log(point);
-    if (point === 'xs' || point === 'sm') {
-      return `ml-${mlSm}`;
-    } else return `ml-${mlLg}`;
-  }
+  console.log(point);
 
   return (
     <>

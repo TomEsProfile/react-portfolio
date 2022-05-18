@@ -47,7 +47,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        'template_rvg4set',
+        form.current,
+        process.env.REACT_APP_EMAILJS_TOKEN
+      )
       .then(
         () => {
           alert('Message successfully sent!');

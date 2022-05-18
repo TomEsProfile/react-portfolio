@@ -28,14 +28,14 @@ export default function Sidebar() {
   const point = useBreakpoints();
 
   function getPositioningStyle() {
-    console.log(point);
+    // console.log(point);
     if (point === 'xs' || point === 'sm') {
       return `fixed bottom-0 flex w-full h-16 md:h-24`;
     } else return `fixed top-0 flex ${getFlexDirection()} h-full w-16 md:w-24`;
   }
 
   function getFlexDirection(gapSm = 2, gapLg = 4) {
-    console.log(point);
+    // console.log(point);
     if (point === 'xs' || point === 'sm') {
       return ` gap-${gapSm}`;
     } else return `flex-col gap-${gapLg}`;

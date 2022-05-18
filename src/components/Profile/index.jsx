@@ -10,90 +10,71 @@ export default function Profile() {
         <div className="inner"></div>
 
         <div className="middle dots">
-          <div className="dot icon-html5"></div>
-          <div className="dot icon-react"></div>
-          <div className="dot icon-express"></div>
-          <div className="dot icon-tailwind"></div>
-        </div>
-
-        <div className="outer dots">
-          <div className="dot icon-js"></div>
-          <div className="dot icon-nodejs"></div>
-          <div className="dot icon-css3"></div>
-          <div className="dot icon-mongodb"></div>
+          {techstackBack.map((item) => (
+            <div key={item.icon} className={`dot icon-${item.icon}`}></div>
+          ))}
         </div>
 
         <div className="middle tooltips">
-          <div className="target">
-            <div className="tooltip">Html-5</div>
-          </div>
-          <div className="target">
-            <div className="tooltip">React</div>
-          </div>
-          <div className="target">
-            <div className="tooltip">Express-JS</div>
-          </div>
-          <div className="target">
-            <div className="tooltip">Tailwind</div>
-          </div>
+          {techstackBack.map((item) => (
+            <div key={item.icon} className="target">
+              <div className="tooltip">{item.tooltip}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="outer dots">
+          {techstackFront.map((item) => (
+            <div key={item.icon} className={`dot icon-${item.icon}`}></div>
+          ))}
         </div>
 
         <div className="outer tooltips">
-          <div className="target">
-            <div className="tooltip">JavaScript</div>
-          </div>
-          <div className="target">
-            <div className="tooltip">Node-JS</div>
-          </div>
-          <div className="target">
-            <div className="tooltip">CSS3</div>
-          </div>
-          <div className="target">
-            <div className="tooltip">MongoDB</div>
-          </div>
-        </div>
-
-        {/* <div className="menu">
-          <div>
-            <div>
-              <div className="icon icon-css3"></div>
-              <h2>Digitale Medien</h2>
-              <ul>
-                <li>Webkonzeption und -design</li>
-                <li>Online-Shops</li>
-                <li>Soical-Media-Marketing (SMM)</li>
-                <li>Display Advertising / Werbebanner</li>
-                <li>E-Mail-Marketing / Newsletter</li>
-                <li>Suchmaschinenmarketing (SEM)</li>
-                <li>Suchmaschinenoptimierung (SEO)</li>
-                <li>Content Management Systeme</li>
-                <li>Intranet- und Extranet-Lösungen</li>
-              </ul>
+          {techstackFront.map((item) => (
+            <div key={item.icon} className="target">
+              <div className="tooltip">{item.tooltip}</div>
             </div>
-          </div>
-        </div> */}
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-const people = [
+const techstackFront = [
   {
-    name: 'Calvin Hawkins',
-    email: 'calvin.hawkins@example.com',
-    image:
-      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    icon: 'html5',
+    tooltip: 'Html-5',
   },
   {
-    name: 'Kristen Ramos',
-    email: 'kristen.ramos@example.com',
-    image:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    icon: 'css3',
+    tooltip: 'CSS3',
   },
   {
-    name: 'Ted Fox',
-    email: 'ted.fox@example.com',
-    image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    icon: 'react',
+    tooltip: 'React',
+  },
+  {
+    icon: 'tailwind',
+    tooltip: 'Tailwind',
+  },
+];
+
+const techstackBack = [
+  {
+    icon: 'nodejs',
+    tooltip: 'Node-JS',
+  },
+  {
+    icon: 'express',
+    tooltip: 'Express-JS',
+  },
+  {
+    icon: 'mongodb',
+    tooltip: 'MongoDB',
+  },
+  {
+    icon: 'js',
+    tooltip: 'JavaScript',
   },
 ];
