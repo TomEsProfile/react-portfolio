@@ -23,12 +23,10 @@ export default function Profile() {
           />
         </h1>
         <p className="profile-text color-3 text-xl md:text-2xl hiddenn sm:block">
-          Analytical and detail-oriented web developer with an affinity for
-          designing and delivering elegant, user-friendly solutions. Strengths
-          in the development of backend-oriented applications with persistent
-          data management. Solid basic knowledge of cloud-based app deployments
-          and database management. OOP experienced due to my Java/JEE background
-          from some years ago.
+          Analytical and detail focused, with an affinity for backend oriented
+          applications with persistent data storage. But also joy in providing
+          elegant, user friendly frontend solutions. OOP-experienced due to good
+          Java knowledge from previous days.
         </p>
       </div>
       {/* Tech Stack */}
